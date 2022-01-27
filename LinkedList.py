@@ -41,18 +41,29 @@ class LinkedList:
         new_node.next=temp
         self.length+=1
 
+    def pop(self,index=-1):
+        if self.length==0:
+            return None
+        temp = pre = self.head
+        while(temp.next):
+            pre =temp
+            temp=temp.next
+        self.tail=pre
+        self.tail.next=None
+        self.length-=1
+        if self.length==0:
+            self.head=None
+            self.tail=None
+        return temp
+
     def printlist(self):
         temp=self.head
         while temp is not None:
             print(temp.value)
             temp=temp.next
 
-mylist=LinkedList(78)
-mylist.append(24)
-mylist.append(56)
-mylist.append(53)
-mylist.printlist()
-print(mylist.length)
-mylist.insert(78,4)
-print(mylist.length)
-mylist.printlist()
+mylist=LinkedList(1)
+mylist.append(2)
+print(mylist.pop().value)
+print(mylist.pop().value)
+print(mylist.pop())
