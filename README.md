@@ -41,3 +41,8 @@ Types of Trees:
 6) Complete Tree: The tree is filled from left to right with no gaps.
 
 Binary Search Tree:
+All the nodes to the right of a node have values greater than the value of the node and all the nodes to the left have values less than the value of the node. They can not have duplicate values.
+Each node can have at-most 2 children as it is a binary tree.
+In a complete, full and perfect BST, no of nodes = 2**n -1, where n = no. of levels.
+They are a prime example of Divide and Conquer as their Time Complexity is O(log(n)(base2)).
+In worst case scenario, a BST never forks and is straight line, therefore worst case time complexity is O(n).
