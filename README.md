@@ -46,3 +46,5 @@ Each node can have at-most 2 children as it is a binary tree.
 In a complete, full and perfect BST, no of nodes = 2**n -1, where n = no. of levels.
 They are a prime example of Divide and Conquer as their Time Complexity is O(log(n)(base2)).
 In worst case scenario, a BST never forks and is straight line, therefore worst case time complexity is O(n).
+
+Hash Tables:
